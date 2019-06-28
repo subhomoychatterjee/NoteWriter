@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:background="@drawable/btn_reset"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/lay_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Header"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+
+            <Button
+                android:id="@+id/dia_btn"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/btn_save"
+                android:text="OK"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_below="@+id/lay_3"
+            android:layout_above="@+id/lay_4"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_reset"
+            android:text="MESSAGE"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="#ffff"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
